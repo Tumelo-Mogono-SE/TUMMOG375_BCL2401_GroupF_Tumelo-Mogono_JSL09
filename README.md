@@ -2,7 +2,7 @@
 # Project overview
 The aim of this project was to create a promise rejection dashboard which is a chrome dashboard extension which contain the weather, information of crypto currency data and the current time and author of the background image.
 
-![](<[JSL09 Solution].png>)
+![](<[./image/JSL09 Solution].png>)
 
 # Project Process
 * For the project after accessing the starter code from the scrimba challenge provided, I first added the required html elements with the attributes.

@@ -2,40 +2,21 @@
 # Project overview
 The aim of this project was to create a promise rejection dashboard which is a chrome dashboard extension which contain the weather, information of crypto currency data and the current time and author of the background image.
 
+![](<[JSL09 Solution].png>)
+
 # Project Process
+* For the project after accessing the starter code from the scrimba challenge provided, I first added the required html elements with the attributes.
+* I then provided the styling inside the CSS file and then linked my created javasript file and CSS file with my HTML file.
+* Inside Javascirpt I used the try catch method, for the first API i needed to fetch the API response, I utilites the await operator for fetching the respone of the API and assigned it to a variable. The variable is then used with the JSON function to convert the response into a JSON format and assign it to another variable. This variable is then used in DOM manipulation to add the author name of the image being displayed and set the background image in the CSS style backgroundImage. The catch method then had the a default image URL and preset name of the author.
+* For the second API i need, utilising the try method I fetched the API response with the await operator and assigned the result to a variable, then used the variable to check if the response is ok and if it is not I threw an error message. I then used the same variable to convert the response into a JSON format and assigned it to a new variable, this new variable is then used for DOM manipulation to add new elements inside the fetched elements from the DOM using element ID's, the new elements are added to the DOM using innerHTML. The catch method is used console log the error message created.
+* I then added a function to get the current time which inside the function I assigned the Date function which gets the date and time and assigned the result to a variable which is then used for DOM manipulation to add content into the element div with the Id of time, the content being the date function results being converted into time only and having the style being short to only have the hour and minutes. I then added a setInterval function which refreshes the call back function after the set time interval.
+* For the last API, I first had to get the current location of the device using the geolocation property which has the method getCurrentPosition which gets the current location and passes it to the parameter of the call back function.
+* Inside the callback function I used the try catch methods, Inside the try method I fetched the response of the API and assigned it to a variable. This variable is then used to first check if the response is ok if not it throws a error message, secondly the variable is used with the json function to convert the response into a JSON format and then assigned to a new variable. The new variable is used for first getting the icon of the current weather from the objects inside the URL and lastly for DOM manipulation by getting information such as temperature and name of the city which the information is used inside the new elements created inside the string literal which is being assigned to the innerHTML of the fetch element. The catch method is used to console log the error message.
+* I then created the manifest.json file which is used for the chrome extension to get information of the extension.
 
 # Challenges
 For this project, I first had challenges with knowing which method to use for getting the time configuration that was required for the project, Second challenge was when I was working on getting the current location of the device I tried different methods which were not right until I saw how they did it in scrimba. I also had a problem with my getCurrentPosition method as my google chrome or microsoft edge were not allowing me unchange the  setting which blocked access to my location, I had to do some changes to how my chrome  views unsecure sites.
 
 # Feedback
-
-![](<[JSL09 Solution].png>)
-Note that this background image is dynamically generated so your's will look different.
-
-## What You Need to Do:
-
-1. Clone the provided Starter Code Repository to your local development environment (e.g., VSCode): https://github.com/CodeSpace-Academy/Module_09_StudentNo_Classcode_Group_Name-Surname_JSL09
-2. Open the cloned project in your code editor.
-3. Code your solution for the challenge as per the provided instructions.
-4. If you have coded your Personal Dashboard challenge in Scrimba, you will need to download the zip folder of your project files. Unzip the project files into your JSL09 project repo on GitHub. Make sure to NOT use the Scrimba README. Instead you will keep your starter code README.
-5. Commit your changes to your local Git repository with meaningful commit messages.
-6. Push your local Git repository to your GitHub account.
-7. Verify that the changes have been successfully pushed to your GitHub repository.
-
-![alt text](download-scrimba-files.png)
-You can download your Scrimba files in the bottom right hand corner of the Scrimba IDE panel. 
-
-## What You Need to Include:
-
-1. Ensure that your code includes the necessary modifications to meet the challenge requirements.
-2. Your GitHub repository should contain the updated code files.
-
-## How We'll Assess Your Work:
-
-1. We will review your GitHub repository to ensure that it contains the updated code files.
-2. We will assess the modifications made to the code to verify that they effectively meet the challenge requirements.
-3. We will consider the commit history and meaningful commit messages to evaluate your coding process.
-
-
-
+This was a great introduction to working with different types of APIs, the experience and knowledge gained is just huge, I would have liked to add more APIs and function to the project, but due to the time constraint I was limited. In overall I look forward to project that implement APIs and those that require features such as Async and await and the try catch method, just so that I can get more practice.
 

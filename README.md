@@ -1,14 +1,13 @@
 # [JSL09] Submission: Personal Dashboard Chrome Extension
+# Project overview
+The aim of this project was to create a promise rejection dashboard which is a chrome dashboard extension which contain the weather, information of crypto currency data and the current time and author of the background image.
 
-You will:
-1. Use the provided Starter Code Repository: https://github.com/CodeSpace-Academy/Module_09_StudentNo_Classcode_Group_Name-Surname_JSL09
-2. Code your solution.
-3. Commit changes to your GitHub repository.
-4. Submit the GitHub Repository Link to the LMS [JSL09] Submission Project Tab.
+# Project Process
 
-In this project you will follow along with the Scrimba Promise Rejection capstone to create a Personal Dashboard for your Chrome Browser. Note you are only required to submit the project code. You DO NOT need to submit the deployed Chrome extension. 
+# Challenges
+For this project, I first had challenges with knowing which method to use for getting the time configuration that was required for the project, Second challenge was when I was working on getting the current location of the device I tried different methods which were not right until I saw how they did it in scrimba. I also had a problem with my getCurrentPosition method as my google chrome or microsoft edge were not allowing me unchange the  setting which blocked access to my location, I had to do some changes to how my chrome  views unsecure sites.
 
-Scrimba Reference Link: https://scrimba.com/learn/frontend/promise-rejection-coc4a4e4d8d208ab33b190dd5
+# Feedback
 
 ![](<[JSL09 Solution].png>)
 Note that this background image is dynamically generated so your's will look different.
